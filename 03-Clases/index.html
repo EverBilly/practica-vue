@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+</head>
+<body>
+    <div id="app" class="container mt-5">
+        <div :class="['p-3', 'text-white', fondo]">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, necessitatibus? Cupiditate ipsam, soluta neque iste quod consequatur aperiam magni fuga sit illum veritatis nobis doloremque nulla maxime delectus itaque est!
+            Explicabo, hic at! Vel, eaque. At labore, culpa id repudiandae, quas iste itaque officiis eius voluptatibus dolore ex voluptate ratione exercitationem totam ullam distinctio sed voluptatem. Tempore provident quod fugiat!
+            Numquam, facere placeat. Dolorum eos tempora vitae libero illum impedit voluptates quaerat vel quas ratione aliquam quia, porro quasi, cumque asperiores recusandae debitis. Molestiae, nemo incidunt. Earum debitis culpa illo?
+            Perferendis voluptates quos blanditiis. Sed libero perferendis quia soluta natus, repellat accusantium velit id quos voluptate vero suscipit nesciunt ab beatae ullam modi veniam minus, porro ratione exercitationem aut amet!
+            Nam voluptatibus inventore aperiam! Error reiciendis earum minima doloribus enim maiores unde aut vero est iusto! Distinctio sint, sapiente qui aut similique iure nisi deleniti cumque aliquam et quo accusamus!
+            Inventore repellendus repellat exercitationem deserunt ipsum perferendis officiis accusamus voluptatibus suscipit omnis reprehenderit impedit totam in, sit eveniet autem facere nulla optio sequi ullam quae. Ipsam doloribus fuga accusantium doloremque!
+            Cupiditate ullam similique nobis aperiam, velit in molestiae animi harum voluptatum veritatis, deleniti qui et, aspernatur pariatur ipsum quibusdam tenetur explicabo maiores at soluta natus ratione facere delectus eius. Sed!
+            Nobis tenetur quis, totam ab culpa, at sint blanditiis ducimus fugit accusantium enim et ullam, quaerat laborum ipsum quisquam voluptate consequuntur recusandae! Ea eligendi laboriosam repellat tempore laudantium dolor ipsam?
+            Sit voluptatem exercitationem quam sunt quisquam modi itaque sint, incidunt quos eum atque labore cupiditate, iusto repudiandae pariatur commodi animi. Facere, laboriosam perferendis hic quis fuga quasi illo? Reprehenderit, corrupti.
+            Obcaecati magnam eum eaque iste. Voluptas natus ea sunt officiis suscipit error debitis nobis distinctio voluptatem magni quisquam blanditiis voluptatum dolores corrupti optio, labore earum numquam tempora modi architecto aspernatur?</p>
+        </div>
+        <input type="text" class="form-control my-3" v-model="fondo">
+        <div class="text-white p-3" :class="{ 'bg-info': color, 'bg-success': !color }">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum esse in distinctio necessitatibus iste maxime culpa neque provident. Similique eum dolores quas explicabo, animi porro alias omnis natus repellendus autem.
+            Fugiat debitis dignissimos architecto enim nihil eaque quod assumenda praesentium. Omnis perspiciatis, quis vitae debitis nihil aperiam optio nobis repellat, qui aspernatur dolorum et aliquam quasi quas sunt eum vel.
+            Aspernatur inventore laudantium hic ad perferendis temporibus in praesentium voluptates ullam explicabo atque dolor alias ipsa, aliquam optio non. Ab fugit dignissimos vero aliquam eligendi rerum molestiae iusto deserunt dicta.
+            Explicabo ut ullam dolores molestias eaque debitis quia. Commodi est consequuntur, ullam distinctio iusto ea unde. Sequi, sint deserunt quis quod placeat expedita. Ab quisquam nobis tenetur exercitationem incidunt est!
+            Adipisci, fugiat beatae facere maiores inventore vero dicta error illum natus reprehenderit ratione eum non nam sapiente dolor impedit hic cupiditate facilis vel. Sapiente nobis iure officia laudantium modi dolores?
+            Iure officiis ullam ratione hic, modi animi nam saepe necessitatibus obcaecati, sapiente repudiandae placeat explicabo deleniti sunt. Quam quo ipsa laborum blanditiis, omnis inventore, quisquam debitis dolor aut incidunt reprehenderit.
+            Cumque maxime sit quae voluptate blanditiis quaerat! Eos libero, repellat doloremque ipsum saepe praesentium reiciendis optio, commodi sed aperiam eum recusandae totam amet aut error qui quis asperiores minus impedit.
+            Assumenda doloremque illum, obcaecati dolores ipsum ad excepturi corporis unde deleniti asperiores dolorem. Impedit quod exercitationem repellat temporibus voluptas a quos dolores dolore consequatur rem. Explicabo adipisci quo hic quas.
+            Cum temporibus voluptatum labore doloribus ratione dignissimos placeat qui laborum id obcaecati repudiandae fugit ea corrupti, reiciendis quasi magnam, itaque, ut perspiciatis. Explicabo provident laudantium eum porro veniam quo voluptatem.
+            Obcaecati possimus voluptas nulla rerum exercitationem quidem doloribus minus tempore magni nesciunt quisquam, ex architecto repellat. Quod assumenda odit nisi vel soluta cumque adipisci, repudiandae fuga aliquid obcaecati ad nemo.
+        </div>
+        <button class="btn btn-primary mt-5" @click="color = !color">Cambiar Color</button>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./index.js"></script>
+</html>
