@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUTED VUEJS</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+</head>
+<body>
+    <div id="app">
+        <h2>{{message}}</h2>
+        <h3>Invertida {{invertir}}</h3>
+        <input type="text" class="form-control" v-model="message">
+        <hr>
+        <button class="btn btn-primary" @click="contador++">+</button>
+        <button class="btn btn-danger" @click="contador--">-</button>
+        <h3>{{contador}}</h3>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar"
+            :class="color" 
+            :style="{'width': contador+'%'}"
+            aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">{{contador}}%</div>
+        </div>
+        <hr>
+        <button class="btn btn-primary" @click="alerta">Prev</button>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./index.js"></script>
+</html>
