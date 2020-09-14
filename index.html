@@ -8,13 +8,19 @@
 <body>
     <div class="app">
         <h2>{{message}}</h2>
-        <input type="text" v-model="nuevaFruta">
+        <input type="text" v-model="nuevaFruta" @keyup.enter="agregarFruta">
         <button @click="agregarFruta">Agregar</button>
         <ul v-for="fruta of frutas">
-            <li>{{fruta.cantidad}} -- {{fruta.nombre}}
+            <li>
+                <input type="number" v-model.number="fruta.cantidad">
+            </li>
+            <li>{{fruta.nombre}}
+                <button @click="fruta.cantidad++">+</button>
+                <button @click="fruta.cantidad--">-</button>
                 <span v-if="fruta.cantidad === 0"> - No hay frutas</span>
             </li>
         </ul>
+        <h5>Total: {{sumarFrutas}}</h5>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
